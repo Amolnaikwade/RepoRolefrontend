@@ -8,6 +8,9 @@ import AboutUs from "./components/AboutUs";
 import Dashboard from "./pages/Dashboard";
 import AuthSuccess from "./components/AuthSuccess";
 import Analysis from "./pages/analysis";
+import AnalyzePage from "./pages/AnalyzePage";
+
+
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,6 +25,7 @@ function App() {
           element={
             <>
               <Home />
+               
 
               <section id="samples">
                 <SampleRepos />
@@ -43,7 +47,7 @@ function App() {
             </>
           }
         />
-
+        <Route path="/analyze" element={<AnalyzePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/auth-success" element={<AuthSuccess />} />
         <Route path="/analysis" element={<Analysis />} />
