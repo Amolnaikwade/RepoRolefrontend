@@ -1,0 +1,56 @@
+current state = homepage 
+
+if(choice == roles){
+    show role cards
+}
+else if(choice == how it works){
+    show how it works page
+}
+else if (choice == about us){
+    show about us page
+}
+else if(choice == contact us){
+    show contact us page
+}
+else if(choice == sign up){
+    if(user == recruiter){
+        show recruiter sign up page
+    }
+    else if(user == student){
+        github authentication
+    }
+}
+else if(choice == login){
+    if(user == recruiter){
+        show recruiter login page
+    }
+    else if(user == student){
+        github authentication
+    }
+}
+
+current state = student dashboard
+
+show overall github analytics
+and repo cards (assume we have 5 repos)
+if(student clicks on repo card){
+    show repo analytics and insights and suggested improvements and job recommendations based on the repo
+
+    if( student clicks on job recommendation && job is open){
+        show job  cards with details 
+        if(student clicks on apply){
+            show application form
+        }   
+    }
+}
+
+current state = recruiter dashboard
+
+show job cards (assume we have 5 jobs)
+
+if(recruiter clicks on job card){
+    show job details and analytics of applicants for that job
+    if(recruiter clicks on applicant){
+        show applicant details and github analytics and insights
+    }
+}
