@@ -52,3 +52,7 @@ pgdata/
 
 # Cache
 .cache/
+.cache/
+
+# AI Files
+TASK.md
